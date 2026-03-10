@@ -43,7 +43,7 @@
         </NuxtLink>
         <q-separator dark vertical />
         <q-btn-dropdown stretch flat no-caps label="English">
-          <q-list padding dense>
+          <!-- <q-list padding dense>
             <q-item v-close-popup clickable :to="localePath('/', 'en')">
               <q-item-section>
                 <q-item-label>English</q-item-label>
@@ -54,7 +54,7 @@
                 <q-item-label>한국어</q-item-label>
               </q-item-section>
             </q-item>
-          </q-list>
+          </q-list> -->
         </q-btn-dropdown>
         <q-separator dark vertical />
         <!-- <ClientOnly> -->
@@ -110,8 +110,8 @@ const moveYoutube = async () => {
 };
 
 // const { locale } = useI18n();
-const localePath = useLocalPath();
-const switchLocalePath = useSwitchLocalePath();
+// const localePath = useLocalPath();
+// const switchLocalePath = useSwitchLocalePath();
 
 const appConfig = useAppConfig();
 console.log('appConfig: ', appConfig);
